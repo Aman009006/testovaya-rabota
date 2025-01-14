@@ -127,7 +127,7 @@ const ReviewsList = ({ reviews }) => (
         </div>
       ))
     ) : (
-      <p>Пока отзывов нет. Будьте первым!</p>
+      <p>There are no reviews yet. Be the first!</p>
     )}
   </div>
 );

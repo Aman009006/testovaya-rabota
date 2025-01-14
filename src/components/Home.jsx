@@ -172,6 +172,7 @@ function Home() {
   };
 
   const goToStep2 = () => {
+   if (amount1) {
     localStorage.setItem(
       "change",
       JSON.stringify({
@@ -185,6 +186,7 @@ function Home() {
     setStep2(true);
     setStep3(false);
     setStep4(false);
+   }
   };
 
   const goToStep3 = () => {
@@ -273,15 +275,17 @@ function Home() {
               </p>
             </div>
             <div
-              onClick={goToStep2}
-              className={`button ${amount1 && amount2 ? "active" : ""}`}
+              className="dsfcen"
             >
-              Change now
+              <button onClick={goToStep2}
+              className={`button ${amount1 && amount2 ? "active" : ""}`}>Change now</button>
             </div>
+            <div className="dsfcen">
             <img className="mainimg"
               src="https://moneyfast.vercel.app/static/media/Bitcoin.7232be9fc09e07e96d30.png"
               alt="Bitcoin"
             />
+            </div>
           </div>
         </div>
       ) : (
@@ -416,7 +420,9 @@ function Home() {
             />
             <p className="pdet">Sum:</p>
             <input value={"11546652"} readOnly />
+            <div className="dsfcen">
             <div onClick={goToStep4} className="button btnipd active">I paid</div>
+            </div>
             <img className="mobimg" src="https://moneyfast.vercel.app/static/media/Bitcoin.7232be9fc09e07e96d30.png" />
           </div>
         </div>

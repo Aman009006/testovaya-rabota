@@ -7,7 +7,6 @@ import Reviews from "./components/Reviews";
 import Help from "./components/Help";
 import Data from "./components/Data";
 
-
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -17,33 +16,43 @@ function App() {
   return (
     <Router>
       <div>
-      <nav className="nav">
-      <div className="containerNav">
-        <div className="logo">
-          <a href="/">FAST CHANGER</a>
-        </div>
+        <nav className="nav">
+          <div className="containerNav">
+            <div className="logo">
+              <a href="/">FAST CHANGER</a>
+            </div>
 
-        <div className="hamburger" onClick={toggleMenu}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+            <div className="hamburger" onClick={toggleMenu}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
 
-        <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-          <a href="/faq" onClick={() => setIsMenuOpen(false)}>FAQ</a>
-          <a href="/help" onClick={() => setIsMenuOpen(false)}>Help</a>
-          <a href="/reviews" onClick={() => setIsMenuOpen(false)}>Reviews</a>
-          <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/a/a3/Woolly_mammoth_%28Mammuthus_primigenius%29_-_Mauricio_Ant%C3%B3n.jpg" onClick={() => setIsMenuOpen(false)}>
-            <img
-              className="tg"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/512px-Telegram_2019_Logo.svg.png"
-              alt="Telegram"
-            />
-          </a>
-          <h1 onClick={toggleMenu}>X</h1>
-        </div>
-      </div>
-    </nav>
+            <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
+              <Link to="/faq" onClick={() => setIsMenuOpen(false)}>
+                FAQ
+              </Link>
+              <Link to="/help" onClick={() => setIsMenuOpen(false)}>
+                Help
+              </Link>
+              <Link to="/reviews" onClick={() => setIsMenuOpen(false)}>
+                Reviews
+              </Link>
+              <a
+                target="_blank"
+                href="https://upload.wikimedia.org/wikipedia/commons/a/a3/Woolly_mammoth_%28Mammuthus_primigenius%29_-_Mauricio_Ant%C3%B3n.jpg"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <img
+                  className="tg"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/512px-Telegram_2019_Logo.svg.png"
+                  alt="Telegram"
+                />
+              </a>
+              <h1 onClick={toggleMenu}>X</h1>
+            </div>
+          </div>
+        </nav>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/faq" element={<FAQ />} />
@@ -56,7 +65,11 @@ function App() {
             <div className="logo">FAST CHANGER</div>
             <p>©2025 Cryptocurrency exchange service</p>
           </div>
-          <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/a/a3/Woolly_mammoth_%28Mammuthus_primigenius%29_-_Mauricio_Ant%C3%B3n.jpg" className="footer_link">
+          <a
+            target="_blank"
+            href="https://upload.wikimedia.org/wikipedia/commons/a/a3/Woolly_mammoth_%28Mammuthus_primigenius%29_-_Mauricio_Ant%C3%B3n.jpg"
+            className="footer_link"
+          >
             support_fastchanger@proton.me
             <a href="#">
               <img
