@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+
 
 function CustomSelect({ options, value, onChange, icons }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -374,7 +376,7 @@ function Home() {
                       onChange={(e) => setIsChecked(e.target.checked)}
                     />
                     I agree to the processing of personal data and accept the{" "}
-                    <a href="/dataProcessing">rules of exchange</a>
+                    <Link to="/dataProcessing" >rules of exchange</Link >
                   </label>
                   <button
                     className={`button btnsnd ${
