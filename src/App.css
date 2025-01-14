@@ -423,6 +423,11 @@
     justify-content: center;
   }
 }
+.dsfcen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
