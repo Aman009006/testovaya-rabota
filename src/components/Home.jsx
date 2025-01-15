@@ -267,7 +267,7 @@ function Home() {
                   <input
                     type="number"
                     value={amount2}
-                    placeholder="Calculated amount"
+                    placeholder="Calculated amount (min: 10$)"
                     readOnly
                   />
                 </div>
