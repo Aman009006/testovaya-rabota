@@ -5,64 +5,40 @@ const Reviews = () => {
   const users = [
     {
       id: 1736349690673,
-      name: "Peter Müller",
-      rating: 4,
+      name: "Peter",
+      rating: 5,
       review: "Great exchange, fast and reliable!"
     },
     {
       id: 1736349690674,
-      name: "Anna Schmidt",
+      name: "User3109",
       rating: 5,
-      review: "Awesome service, exchanged crypto in no time!"
+      review: "👍👍"
     },
     {
       id: 1736349690675,
-      name: "Johann Weber",
+      name: "Arjun Sharma",
       rating: 4,
-      review: "Smooth transaction, highly recommend!"
+      review: "सुव्यवस्थित लेनदेन, अत्यधिक सिफारिश करता हूँ!"
     },
     {
       id: 1736349690676,
-      name: "Laura Hoffmann",
+      name: "Anish Kapoor",
       rating: 4,
-      review: "Quick and efficient crypto exchange, no issues."
+      review: "Quick and efficient crypto exchange"
     },
     {
       id: 1736349690677,
-      name: "Maximilian Wagner",
-      rating: 3,
+      name: "User0023",
+      rating: 4,
       review: "Great platform, fast and secure!"
     },
     {
       id: 1736349690678,
-      name: "Sophia Becker",
+      name: "Neha Mehta",
       rating: 5,
       review: "Best exchange I've used, highly recommended!"
     },
-    {
-      id: 1736349690679,
-      name: "Lukas Fischer",
-      rating: 4,
-      review: "Very quick exchange, everything was seamless!"
-    },
-    {
-      id: 1736349690680,
-      name: "Emma Meyer",
-      rating: 5,
-      review: "Reliable and fast service, will use again!"
-    },
-    {
-      id: 1736349690681,
-      name: "Felix Schneider",
-      rating: 5,
-      review: "Super fast crypto exchange, totally worth it!"
-    },
-    {
-      id: 1736349690682,
-      name: "Hannah Klein",
-      rating: 5,
-      review: "Great experience, fast exchange and easy to use!"
-    }
   ];
   
   // Загрузка отзывов из Local Storage

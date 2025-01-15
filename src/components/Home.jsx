@@ -245,7 +245,7 @@ function Home() {
                   <input
                     type="number"
                     value={amount1}
-                    placeholder="Введите сумму"
+                    placeholder="Enter amount"
                     onChange={(e) => setAmount1(e.target.value)}
                   />
                 </div>
@@ -267,7 +267,7 @@ function Home() {
                   <input
                     type="number"
                     value={amount2}
-                    placeholder="Рассчитанная сумма"
+                    placeholder="Calculated amount"
                     readOnly
                   />
                 </div>

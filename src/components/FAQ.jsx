@@ -4,9 +4,9 @@ const FAQ = () => {
   // Вопросы и ответы
   const faqData = [
     { question: 'How long does a cryptocurrency exchange take?', answer: 'Exchange processing time depends on the selected currencies and network congestion. Typically the exchange takes from a few minutes to several hours.' },
-    { question: 'How to safely exchange cryptocurrency?', answer: 'We ensure the security of all transactions using encryption technologies. Always check the recipients address before sending funds.' },
-    { question: 'What cryptocurrencies are available for exchange?', answer: 'We support many popular cryptocurrencies, including Bitcoin (BTC), Ethereum (ETH), Litecoin (LTC), Ripple (XRP), and others. The list of available currencies is updated regularly.' },
-    { question: 'How to start exchanging cryptocurrency?', answer: 'To start exchanging cryptocurrency, select the currency you want to exchange and the currency you want to exchange into. After that, perform the operation by following the instructions on the screen.' },
+    { question: 'Is it safe to use your exchanger?', answer: 'We pay special attention to safety. We use advanced data encryption, two-factor authentication and other measures to protect your funds and personal information.' },
+    { question: 'Can I cancel the exchange?', answer: 'Once an exchange has been confirmed, it is usually not possible to cancel it, as the processing process begins immediately. Please check the exchange details carefully before confirming.' },
+    { question: 'What should I do if I made a mistake when entering data?', answer: 'If you made a mistake when entering your details, please contact our support team immediately. The sooner you report an error, the greater the chance of fixing it.' },
     { question: 'What is the cryptocurrency exchange rate?', answer: 'The exchange rate depends on current market conditions and may change in real time. We provide current courses on our website.' },
     { question: 'What are the fees for cryptocurrency exchange?', answer: 'The exchange fee depends on the type of exchange and currency. You can see the exact commission on the exchange page before confirming the transaction.' },
     { question: 'Can I exchange cryptocurrency without registration?', answer: 'Yes, you can exchange on our platform without having to create an account.' },
